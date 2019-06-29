@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zhangchongantest.neu.edu.testcommunication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.AidlService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.MessagerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="zhangchongantest.neu.edu.testcommunication.android.intent.COMMUNICATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="info" />
+                <data android:mimeType="application/pdf" /> <!-- 打开pdf -->
+                <data android:mimeType="text/html" /> <!-- 打开html -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".DBContentProvider"
+            android:authorities="zhangchongantest.neu.edu.testcommunication.communicate"
+            android:exported="true" />
+    </application>
+
+</manifest>

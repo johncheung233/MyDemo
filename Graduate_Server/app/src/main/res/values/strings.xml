@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Graduate_Server</string>
+    <string name="empty_request_data">暂无请求数据</string>
+    <string name="alreadyUpdata">暂无最新数据</string>
+</resources>

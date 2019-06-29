@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextViewDefault">#FFFAFA</color>
+    <color name="colorTextViewSelected">#FFD700</color>
+    <color name="colorMainFragment">#EEDD82</color>
+    <color name="colorMineFragment">#FFDAB9</color>
+    <color name="colorGray">#BEBEBE</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorConfirmCancel">#F8F8F8</color>
+    <color name="colorDialogTitle">#FF8200</color>
+</resources>

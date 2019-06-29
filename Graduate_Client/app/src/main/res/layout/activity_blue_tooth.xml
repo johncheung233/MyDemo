@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blue_tooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="zhangchongantest.neu.edu.graduate_client.Activity.BlueToothActivity"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.47"
+            android:text="车位号："
+            android:textSize="20dp"
+            android:gravity="right|center_vertical" />
+        <TextView
+            android:id="@+id/textView_parkingspaceid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="距离："
+            android:textSize="20dp"
+            android:gravity="right|center_vertical"
+            android:layout_weight="0.51" />
+        <TextView
+            android:id="@+id/textView_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+
+    <Button
+        android:text="搜索设备完成入库"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_search"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bondWarning"
+        android:textSize="15dp"
+        android:layout_weight="0.10"
+        android:layout_marginTop="100dp"
+        android:id="@+id/textView8" />
+</LinearLayout>

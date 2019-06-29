@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainFragment"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/item_margin"
+        android:background="@drawable/viewflipper_style"></ViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin">
+
+        <zhangchongantest.neu.edu.graduate_client.CustomImageView
+            android:id="@+id/imageView_toBlueTooth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:clickable="true"
+            android:src="@mipmap/bound" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView_toBlueTooth"
+            android:layout_below="@+id/imageView_toBlueTooth"
+            android:text="@string/bluetoothBond"
+            android:textSize="@dimen/item_margin" />
+
+        <zhangchongantest.neu.edu.graduate_client.CustomImageView
+            android:id="@+id/imageView_parkOut"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="200dp"
+            android:clickable="true"
+            android:src="@mipmap/pay" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView_parkOut"
+            android:layout_below="@+id/imageView_parkOut"
+            android:text="@string/carOut"
+            android:textSize="@dimen/item_margin" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/item_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="当前订单车牌:"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/textView_fragmentCarId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:hint="unknow"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="当前停车位号:"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/textView_fragmentParkingId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:hint="unknow"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="当前绑定状态:"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/textView_fragmentBondStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/mineFragment_textsize"
+                android:hint="unknow"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Hello World!"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="addmore"
+
+        app:layout_constraintStart_toStartOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_add"
+        app:layout_constraintLeft_toRightOf="@+id/button_add" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_update"
+        app:layout_constraintLeft_toRightOf="@+id/button_update" />
+
+    <Button
+        android:id="@+id/button_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="query"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_delete"
+        app:layout_constraintLeft_toRightOf="@+id/button_delete" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/button_addSingle"
+    />
+
+    <Button
+        android:id="@+id/button_addSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="addSingle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add"/>
+
+    <Button
+        android:id="@+id/button_communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="communicate"
+        app:layout_constraintLeft_toRightOf="@id/button_addSingle"
+        app:layout_constraintBaseline_toBaselineOf="@id/button_addSingle"/>
+
+
+</android.support.constraint.ConstraintLayout>

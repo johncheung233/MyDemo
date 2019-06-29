@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMineFragment">
+
+    <TextView
+        android:id="@+id/textView_account"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:text="用户"
+        android:textSize="@dimen/mineFragment_textsize"
+        android:gravity = "center_vertical"
+        android:background="@drawable/textview_item"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/baseLine1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView_account"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView_accountLogout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:layout_below="@id/baseLine1"
+        android:text="注销登录"
+        android:textSize="@dimen/mineFragment_textsize"
+        android:gravity="center_vertical"
+        android:background="@drawable/textview_item"/>
+
+    <TextView
+        android:id="@+id/baseLine2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_sparate_height"
+        android:layout_below="@+id/textView_accountLogout"/>
+
+    <TextView
+        android:id="@+id/textView_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:text="设置"
+        android:textSize="@dimen/mineFragment_textsize"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/baseLine2"
+        android:background="@drawable/textview_item"/>
+
+    <TextView
+        android:id="@+id/baseLine3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_sparate_height"
+        android:layout_below="@+id/textView_setting"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:text="关于"
+        android:textSize="@dimen/mineFragment_textsize"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/baseLine3"
+        android:background="@drawable/textview_item"/>
+
+    <TextView
+        android:id="@+id/baseLine4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView_about"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:text="退出"
+        android:textSize="@dimen/mineFragment_textsize"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/baseLine4"
+        android:background="@drawable/textview_item"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhangchongantest.neu.edu.graduate_server.Activity.MainActivity">
+    <zhangchongantest.neu.edu.graduate_server.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:clipChildren="false">
+    </zhangchongantest.neu.edu.graduate_server.MyViewPager>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        app:tabIndicatorColor="@color/colorSpringGreen"
+        app:tabIndicatorHeight="5dp"
+        >
+    <!---app:tabSelectedTextColor="@color/colorBlack"-->
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>
